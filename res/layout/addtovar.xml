@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="262dp">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageButton"
+                    android:src="@drawable/redcameraicon"
+                    android:onClick="click_addimagetovar"/>
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Название товара"
+                    android:id="@+id/textView"
+                    android:textSize="30dp"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editT"
+                    android:textSize="30dp"
+                    android:gravity="top"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сделай выбор"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onDialogClick"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>

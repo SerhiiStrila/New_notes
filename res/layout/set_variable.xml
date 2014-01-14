@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Выберите желаемый тип заметки"
+            android:id="@+id/textView"
+            android:textSize="35dp"
+            />
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Стандартная заметка"
+            android:id="@+id/radioStandart"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="30dp"
+            android:onClick="onRadioClick"/>
+
+    <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Товар"
+            android:id="@+id/radioTovar"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="30dp"
+            android:onClick="onRadioClick"/>
+
+    <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Местоположение"
+            android:id="@+id/radioLocation"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="30dp"
+            android:onClick="onRadioClick"/>
+    </RadioGroup>
+</LinearLayout>

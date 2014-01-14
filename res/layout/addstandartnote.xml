@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:gravity="left"
+            android:layout_weight="1"/>
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:visibility="invisible"/>
+
+        <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton"
+                android:layout_gravity="center"
+                android:src="@drawable/redcameraicon"
+                android:onClick="click_addimage"/>
+    </FrameLayout>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:id="@+id/bt_ok"
+            android:onClick="click_addtobd"/>
+</LinearLayout>

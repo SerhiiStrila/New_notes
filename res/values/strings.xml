@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="back">Back</string>
+    <string name="ok">Ok</string>
+    <string name="addimage">Add image</string>
+    <string name="Notes">1</string>
+
+</resources>

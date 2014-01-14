@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.Notes"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="19"/>
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
+        <activity
+                android:name="MyActivity"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Setvariable"/>
+        <activity android:name=".AddStandartNote"
+                android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".AddTovar"
+                  android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".AddLocation"
+                  android:windowSoftInputMode="stateAlwaysHidden"/>
+
+        <uses-feature android:name="android.hardware.camera" android:required="false"></uses-feature>
+    </application>
+</manifest>
